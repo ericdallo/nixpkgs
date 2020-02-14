@@ -20434,6 +20434,8 @@ in
     gtk = gtk3;
   };
 
+  hover = callPackage ../development/tools/hover { };
+
   hovercraft = python3Packages.callPackage ../applications/misc/hovercraft { };
 
   howl = callPackage ../applications/editors/howl { };
