@@ -20869,6 +20869,8 @@ in
 
   ocrad = callPackage ../applications/graphics/ocrad { };
 
+  odrive = callPackage ../applications/networking/odrive { };
+
   offrss = callPackage ../applications/networking/offrss { };
 
   ogmtools = callPackage ../applications/video/ogmtools { };
