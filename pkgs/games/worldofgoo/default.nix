@@ -30,8 +30,8 @@ stdenv.mkDerivation rec {
 
   src = requireFile {
     message = helpMsg;
-    name = "WorldOfGoo.Linux.1.53.sh";
-    sha256 = "175e4b0499a765f1564942da4bd65029f8aae1de8231749c56bec672187d53ee";
+    name = "world_of_goo_1_51_29337.sh";
+    sha256 = "01bhwnlgpkrjz6sb72z8ci51pwb38b9bp4ifncw480022qlswya1";
   };
 
   buildInputs = [ unzip ];
@@ -45,16 +45,16 @@ stdenv.mkDerivation rec {
     # The game is distributed as a shell script, with a tar of mojosetup, and a 
     # zip archive attached to the end. Therefore a simple unzip does the job.
     # However, to avoid unzip errors, we need to strip those out first.
-    tail -c +421887 ${src} > ${src}.zip
+    tail -c +643094 ${src} > ${src}.zip
     unzip -q ${src}.zip -d ${pname}
   '';
 
   installPhase = ''
     mkdir -p $out/bin $out/share/applications $out/share/icons/hicolor/256x256/apps
 
-    install -t $out/bin -m755 data/${arch}/WorldOfGoo.bin.${arch}
+    install -t $out/bin -m755 data/noarch/game/WorldOfGoo.bin.${arch}
     cp -R data/noarch/* $out/bin
-    cp data/noarch/game/gooicon.png $out/share/icons/hicolor/256x256/apps/2dboy-worldofgoo.png
+    cp data/noarch/game/game/gooicon.png $out/share/icons/hicolor/256x256/apps/2dboy-worldofgoo.png
     cp ${desktopItem}/share/applications/worldofgoo.desktop \
       $out/share/applications/worldofgoo.desktop
 
