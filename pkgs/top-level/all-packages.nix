@@ -23412,6 +23412,8 @@ in
 
   youtube-viewer = perlPackages.WWWYoutubeViewer;
 
+  ytmdesktop = callPackage ../applications/audio/ytmdesktop { };
+
   ytcc = callPackage ../tools/networking/ytcc { };
 
   zam-plugins = callPackage ../applications/audio/zam-plugins { };
