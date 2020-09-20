@@ -13,11 +13,11 @@ in
 
 stdenv.mkDerivation rec {
   pname = "msbuild";
-  version = "16.3+xamarinxplat.2019.07.26.14.57";
+  version = "16.4+xamarinxplat.2019.09.09.15.03";
 
   src = fetchurl {
     url = "https://download.mono-project.com/sources/msbuild/msbuild-${version}.tar.xz";
-    sha256 = "1zcdfx4xsh62wj3g1jc2an0lppsfs691lz4dv05xbgi01aq1hk6a";
+    sha256 = "0a2xi51mh8n4197h2pla11mlz3nkdsyx3lrhqnn9vfj33h1fdhl4";
   };
 
   nativeBuildInputs = [
