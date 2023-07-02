@@ -43,10 +43,10 @@
     "idea-community": {
       "update-channel": "IntelliJ IDEA RELEASE",
       "url-template": "https://download.jetbrains.com/idea/ideaIC-{version}.tar.gz",
-      "version": "2023.1.3",
-      "sha256": "336ec81b78645349e0b476047e2d1993ed3f1c571f8961565a3e47fe5c9c02bf",
-      "url": "https://download.jetbrains.com/idea/ideaIC-2023.1.3.tar.gz",
-      "build_number": "231.9161.38"
+      "version": "232.8453.116",
+      "sha256": "sha256-Y4Q6AgfALQ4WgSR3arhBKQ9zHEZfP01UTqqaIKeOAdI=",
+      "url": "https://download.jetbrains.com/idea/ideaIC-232.8453.116.tar.gz",
+      "build_number": "232.8453.116"
     },
     "idea-ultimate": {
       "update-channel": "IntelliJ IDEA RELEASE",
